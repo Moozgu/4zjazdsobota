@@ -12,7 +12,9 @@ public class Main {
 
         System.out.println(a);
         System.out.println(b);
-//        System.out.println(a == b);
-//        System.out.println(a.equals(b));
+        System.out.println(a == b);
+        System.out.println(a.equals(b));
+        System.out.println(a.hashCode());
+        System.out.println(b.hashCode());
     }
 }

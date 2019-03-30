@@ -41,8 +41,7 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return year == car.year &&
-                Objects.equals(brand, car.brand);
+        return car.hashCode() == this.hashCode();
     }
 
     @Override
