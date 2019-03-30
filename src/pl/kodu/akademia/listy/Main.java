@@ -1,6 +1,7 @@
 package pl.kodu.akademia.listy;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -10,7 +11,24 @@ public class Main {
         List<Pet> list2 = new ArrayList<>();
 //        list.add("cos");
 //        list.add(5);
-        list.add(new Car("BMW"));
+        list.add(new Car("BMW", 1999));
+        list.add(new Car("BMW", 2045));
+        list.add(new Car("BMW", 1922));
+        list.add(new Car("BMW", 1995));
+        list.add(new Car("BMW", 1923));
+        list.add(new Car("BMW", 2014));
+        list.add(new Car("BMW", 1997));
+
+        for (Car car : list) {
+            System.out.println(car);
+
+        }
+
+        Iterator i = list.iterator();
+        while (i.hasNext()){
+            System.out.println(i.next());
+        }
+
         list2.add(new Pet("Tuptus"));
         System.out.println(list.get(0));
         System.out.println(list2.get(0));

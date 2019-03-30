@@ -2,9 +2,19 @@ package pl.kodu.akademia.listy;
 
 public class Car {
     private String brand;
+    private int year;
 
-    public Car(String brand) {
+    public Car(String brand, int year) {
         this.brand = brand;
+        this.year = year;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public String getBrand() {
@@ -17,6 +27,9 @@ public class Car {
 
     @Override
     public String toString() {
-        return this.brand;
+        return "Car {" +
+                "brand='" + brand + '\'' +
+                ", year=" + year +
+                '}';
     }
 }
