@@ -2,7 +2,7 @@ package pl.kodu.akademia.listy;
 
 import java.util.Objects;
 
-public class Car {
+public class Car implements Comparable{
     private String brand;
     private int year;
 
@@ -47,5 +47,10 @@ public class Car {
     @Override
     public int hashCode() {
         return Objects.hash(brand, year);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return this.year - ((Car) o).getYear();
     }
 }
