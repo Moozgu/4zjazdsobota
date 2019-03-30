@@ -17,10 +17,10 @@ public class Main {
 //        System.out.println(((Car) list.get(2)).getBrand());
       //  System.out.println(((Car) list.get(3)).getBrand());
 
-//        if (list.get(3) instanceof Car) {
-//            System.out.println("To jest auto!");
-//        } else if (list.get(3) instanceof Pet){
-//            System.out.println("To jest pet!");
-//        }
+        if (list.get(3) instanceof Car) {
+            System.out.println("To jest auto!");
+        } else if (list.get(3) instanceof Pet){
+            System.out.println("To jest pet!");
+        }
     }
 }
